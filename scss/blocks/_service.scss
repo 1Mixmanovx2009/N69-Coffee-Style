@@ -1,0 +1,102 @@
+.service-section {
+    padding: 118px 0 169px;
+}
+
+.service__content-wrapper {
+    text-align: center;
+    margin-bottom: 96px;
+}
+
+.container__cards {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    row-gap: 33px;
+    column-gap: 24px;
+}
+
+.service__content-wrapper > h2 {
+    @include textStyle ($FS: 38px, $FW:700, $LH:45.99PX, $CLR: $clr-black, $CASE: capitalize, $MB:8px);
+}
+
+.service__content-wrapper > p {
+    @include textStyle ($FS: 16px, $FW:400, $LH:24PX, $CLR: $clr-black, $CASE: capitalize, $MB:0px);
+}
+
+.service__item {
+    cursor: pointer;
+    width: 354px;
+    border-radius: 5px;
+    height: 465px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 1px 2px 4px 0 gray;
+    
+    &:hover {
+        box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 24px 0 rgba(0, 0, 0, 0.19);
+        
+        transition: all 0.5s;
+    }
+    
+    &:hover > .service__img {
+        height: 238px;
+    }
+    
+    &:hover > .service__hidden-content {
+        bottom: 0;
+    }
+}
+
+
+.service__img {
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.5s;
+}
+
+.service__subcontent {
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+}
+
+.service__hidden-content {
+    padding: 20px;
+    position: absolute;
+    bottom: -100%;
+    height: 48%;
+    transition: 0.5s;
+}
+
+.service__hidden-content > h3 {
+    @include textStyle ($FS: 24px, $FW:700, $LH:29.05PX, $CLR: $clr-black, $CASE: capitalize, $MB:10px);
+}
+
+.service__hidden-content > p {
+    @include textStyle ($FS: 14px, $FW:700, $LH:20PX, $CLR: $clr-black, $CASE: capitalize, $MB:15px);
+}
+
+.service__hidden-content > a {
+    @include textStyle ($FS: 15px, $FW:500, $LH:18PX, $CLR: $clr-orange, $CASE: capitalize, $MB:15px);
+    padding-right: 30px;
+
+    &::after {
+        content: "";
+        position: absolute;
+        right: 235px;
+        bottom: 27px;
+        margin: auto 0; 
+        width: 13px;
+        height: 18px;
+        background-image: url(../images/Vector\ \(7\).svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+}
+
+.service__subcontent > h3 {
+    @include textStyle ($FS: 24px, $FW:700, $LH:29.05PX, $CLR: $clr-white, $CASE: capitalize, $MB:15px);
+}
+
+.service__subcontent > p {
+    @include textStyle ($FS: 15px, $FW:500, $LH:18px, $CLR: $clr-white, $CASE: capitalize, $MB:0px);
+}
