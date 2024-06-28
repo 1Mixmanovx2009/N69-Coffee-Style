@@ -1,0 +1,50 @@
+.pro-section {
+    width: 1440px;
+    height: 288px;
+    padding: 75px 125px;
+    background-image: url(../images/Background.png);
+    background-repeat: no-repeat;
+    margin: 0 auto 100px;
+    background-position: center center;
+    // margin: auto;
+    background-size:  100%;
+}
+
+.pro {
+    @include display ($items:center, $space:space-between, $gap: 12px);
+}
+
+.pro__content-wrapper {
+    width: 279px;
+}
+
+.pro__content-wrapper > h2 {
+    @include textStyle ($FS: 38px, $FW:600, $LH:40PX, $CLR:white, $CASE:capitalize, $MB:20px);
+}
+
+.pro__content-wrapper > p {
+    @include textStyle ($FS: 16px, $FW:400, $LH:19PX, $CLR:white, $CASE:capitalize, $MB:0px);
+}
+
+.pro__list {
+    // padding-right: 300px;
+    @include display ($items:start, $space:start, $gap: 55px);
+}
+
+.count > strong {
+    @include textStyle ($FS: 50px, $FW:600, $LH:60PX, $CLR:white, $CASE:capitalize, $MB:15px);
+}
+
+.count > p {
+    @include textStyle ($FS: 16px, $FW:400, $LH:19PX, $CLR:white, $CASE:capitalize, $MB:15px);
+}
+
+.count__img-wrapper {
+    width: 48px;
+    height: 48px;
+    // margin: 0 auto;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    background: #D9D9D9;
+    @include display ($items:center, $space:center, $gap: 0px);
+}

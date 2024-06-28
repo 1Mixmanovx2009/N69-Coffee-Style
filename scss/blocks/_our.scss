@@ -1,0 +1,48 @@
+.us__our {
+    width: 1134px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 50px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.us__list {
+    width: 542px;
+}
+
+.us__item > h2 {
+    @include textStyle ($FS: 38px, $FW:700, $LH:45PX, $CLR:black, $CASE:capitalize, $MB:16px);
+}
+
+.us__item > h2 > span {
+    color: $clr-orange;
+}
+
+.us__item > p {
+    width: 542px;
+    @include textStyle ($FS: 16px, $FW:300, $LH:24PX, $CLR: #000000AD
+    , $CASE:capitalize, $MB:50px);
+}
+
+.our__list {
+    width: 542px;
+}
+
+.our__item > img {
+    margin-bottom: 50px;
+} 
+
+.our__item > h2 {
+    @include textStyle ($FS: 38px, $FW:700, $LH:45PX, $CLR:black, $CASE:capitalize, $MB:16px);
+}
+
+.our__item > h2 > span {
+    color: $clr-orange;
+}
+
+.our__item > p {
+    width: 516px;
+    @include textStyle ($FS: 16px, $FW:300, $LH:24PX, $CLR: #000000AD
+    , $CASE:capitalize, $MB:0px);
+}
